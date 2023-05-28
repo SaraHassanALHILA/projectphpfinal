@@ -1,3 +1,4 @@
+<?php include('conection.php') ;?>
 <!DOCTYPE html>
 <head>
     <meta charset="UTF_8">
@@ -8,14 +9,16 @@
 <body>
     <div class="center">
         <h1>login</h1>
-        <form method="post">
+        <form method="post" >
+            
+		<?php echo display_error(); ?>
             <div class="txt_field">
-                <input type="email" required>
+                <input type="email"  name="email">
                 <span></span>
                 <label>email</label>
             </div>
             <div class="txt_field">
-                <input type="password" required>
+                <input type="password"  name="password">
                 <span></span>
                 <label>password</label>
             </div>
